@@ -18,5 +18,9 @@
   "homepage": "https://github.com/wellitsmk/symmetrical-waffle#readme",
   "workspaces": [
     "packages/sumFrom"
-  ]
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "lerna": "^7.3.0"
+  }
 }
