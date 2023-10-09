@@ -1,0 +1,21 @@
+{
+  "name": "sumoff",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./dist/work.js",
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wellitsmk/symmetrical-waffle.git"
+  },
+  "author": "Mohit Kumar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wellitsmk/symmetrical-waffle/issues"
+  },
+  "homepage": "https://github.com/wellitsmk/symmetrical-waffle#readme"
+}
