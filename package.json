@@ -17,7 +17,8 @@
   },
   "homepage": "https://github.com/wellitsmk/symmetrical-waffle#readme",
   "workspaces": [
-    "packages/sumFrom"
+    "packages/sumFrom",
+    "packages/fib"
   ],
   "dependencies": {},
   "devDependencies": {
