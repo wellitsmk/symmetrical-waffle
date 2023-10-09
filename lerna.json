@@ -1,5 +1,18 @@
 {
   "$schema": "node_modules/lerna/schemas/lerna-schema.json",
-  "version": "independent",
-  "conventionalCommits": true
+  "packages": [
+    "packages/*"
+  ],
+  "command": {
+    "create": {
+      "license": "MIT"
+    },
+    "publish": {
+      "bump": "patch",
+      "conventionalCommits": true,
+      "message": "chore(release): 🔖 Publish new version",
+      "ignoreChanges": ["CHANGELOG.md"]
+    }
+  },
+  "version": "independent"
 }
