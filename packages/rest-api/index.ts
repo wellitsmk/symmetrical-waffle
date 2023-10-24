@@ -14,7 +14,7 @@ async function doHttpRequest<T>(
     auth?: any,
     retry?: number,
     schema?: ZodSchema,
-) : Promise<T> {
+) : Promise<T extends {} ? T : any> {
     
     const axiosBody = {
         url,
@@ -34,7 +34,7 @@ async function doHttpRequest<T>(
     if(schema instanceof ZodSchema) {
         return schema.parse(result.data);
     }
-    return result.data as any
+    return result.data;
 }
 
 
@@ -50,6 +50,9 @@ async function main() {
 
     let d = await doHttpRequest<ZType>('https://jsonplaceholder.typicode.com/todos/1', 'get', 'json',[],null,null,null,undefined,todoSchema);
     console.log(d)
+
+    let e = await doHttpRequest('https://jsonplaceholder.typicode.com/todos/1', 'get', 'json',[],null,null,null,undefined,todoSchema);
+    console.log(e.id)
 }
 
 main();
