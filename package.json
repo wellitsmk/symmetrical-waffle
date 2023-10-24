@@ -22,8 +22,7 @@
   },
   "homepage": "https://github.com/wellitsmk/symmetrical-waffle#readme",
   "workspaces": [
-    "packages/sumFrom",
-    "packages/fib"
+    "packages/*"
   ],
   "devDependencies": {
     "@commitlint/cli": "^17.7.2",

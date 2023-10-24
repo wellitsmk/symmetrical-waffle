@@ -1,0 +1,22 @@
+{
+  "name": "rest-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wellitsmk/symmetrical-waffle.git"
+  },
+  "author": "@wellitsmk",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wellitsmk/symmetrical-waffle/issues"
+  },
+  "homepage": "https://github.com/wellitsmk/symmetrical-waffle#readme",
+  "dependencies": {
+    "axios": "^1.5.1"
+  }
+}
